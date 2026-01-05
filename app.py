@@ -20,7 +20,7 @@ using **K-Means Clustering**.
 def load_data():
     try:
         # Load the specific netflix dataset
-        df = pd.read_csv('netflix_cleaned_20251011_141144.csv')
+        df = pd.read_csv('netflix.csv')
         # Helper to ensure pyarrow compatibility
         for col in df.columns:
             if df[col].dtype == 'object':
