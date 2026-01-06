@@ -1,40 +1,44 @@
 # 👥 Netflix User Segmentation (K-Means)
 
-This project implements **K-Means Clustering** to segment Netflix users based on their usage metadata.
+A Streamlit application that segments Netflix users into distinct groups based on their usage patterns and subscription details using K-Means Clustering.
 
-## 🚀 Features
+## 📊 Features
 
-- **Clustering**: Groups users by features like `Age`, `Monthly Revenue`, `Download Speed`.
-- **Elbow Method**: Visualizes the optimal number of clusters (`k`).
-- **Interactive Scatter Plot**: Explore clusters by plotting different features against each other.
+- **User Clustering**: Segments users into groups (clusters) to identify behavior patterns.
+- **Optimal K Finding**: Uses the Elbow Method to determine the best number of clusters.
+- **Interactive Visualization**: 2D scatter plots mapping relationships between different user features.
+- **Real-time Processing**: Trains the clustering algorithm instantly on the provided dataset.
 
-## 🛠️ Usage
+## 🛠️ Installation
 
-1. **Install dependencies**:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Vibin-007/k-means.git
+   cd k-means
+   ```
+
+2. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-2. **Run the App**:
+3. Run the application:
    ```bash
-   python -m streamlit run app.py
+   streamlit run app.py
    ```
 
 ## 📁 Project Structure
 
-- `app.py`: Streamlit application file.
-- `kmeans_analysis.ipynb`: Jupyter notebook for clustering analysis.
-- `netflix.csv`: Dataset containing user data.
-- `requirements.txt`: Python package dependencies.
+- `app.py`: Main application file containing the Streamlit interface and logic.
+- `netflix.csv`: Dataset containing User ID, Subscription Type, Monthly Revenue, Age, and more.
+- `kmeans_analysis.ipynb`: Jupyter notebook for clustering analysis and visualization.
+- `requirements.txt`: List of Python dependencies.
 
-## 📂 Dataset
+## 📈 Model Information
 
-The project uses `netflix.csv`. Ensure it is in the root directory.
-
-## 📦 Requirements
-
-- streamlit
-- pandas
-- scikit-learn
-- matplotlib
-- seaborn
+The model uses **K-Means Clustering** to group users based on:
+- **Monthly Revenue**
+- **Age**
+- **Join Date** (Duration)
+- **Device Usage**
+- **Country**
