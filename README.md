@@ -20,9 +20,16 @@ This project implements **K-Means Clustering** to segment Netflix users based on
    python -m streamlit run app.py
    ```
 
+## 📁 Project Structure
+
+- `app.py`: Streamlit application file.
+- `kmeans_analysis.ipynb`: Jupyter notebook for clustering analysis.
+- `netflix.csv`: Dataset containing user data.
+- `requirements.txt`: Python package dependencies.
+
 ## 📂 Dataset
 
-The project uses `netflix_cleaned_20251011_141144.csv`. Ensure it is in the root directory.
+The project uses `netflix.csv`. Ensure it is in the root directory.
 
 ## 📦 Requirements
 
